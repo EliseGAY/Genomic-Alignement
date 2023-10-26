@@ -3,8 +3,8 @@
 #SBATCH --ntasks-per-node=16
 #SBATCH --job-name=mummer
 #SBATCH --time=00:30:00
-#SBATCH -o nucmer_SG_myr_bic.o
-#SBATCH -e nucmer_SG_myr_bic.e
+#SBATCH -o nucmer_ref_vs_query.o
+#SBATCH -e nucmer_ref_vs_query.e
 
 # Load module 
 module load bioinfo/mummer-4.0.0beta2
