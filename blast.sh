@@ -23,9 +23,8 @@ BLAST databases are updated daily and may be downloaded via FTP from ftp://ftp.n
  nr.*tar.gz = Non-redundant protein sequences from GenPept, Swissprot, PIR, PDF, PDB, and NCBI RefSeq
 '''
 
-# IF PUBLIC database is needed : NCBI database 
-#----------------------------------------------#
-# If you need to download the NCBI database (Very heavy file (~70G)
+# IF PUBLIC database is needed : NCBI database (Very heavy file (~70G)
+#--------------------------------------------------------------------#
 wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'
 # Unzip database
 cat nr.*.tar.gz | tar -zxvi -f -C .
@@ -37,6 +36,7 @@ cat nr.*.tar.gz | tar -zxvi -f -C .
 # dbtype : chose prot or nucl
 # out : string to name your .db output
 # parse_seqids : mandatory
+
 makeblastdb -in input.fasta -dbtype prot/nucl -out input.db -parse_seqids
 
 #--------------------------------#
