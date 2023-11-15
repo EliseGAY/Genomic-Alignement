@@ -23,7 +23,7 @@ prefix="query_vs_ref"
 # You do not need to know the details of the "delta" format, MUMmer provides a "show-coords" tool to show alignment coordinates in the "delta" files. 
 # -p = output_prefix
 
-nucmer -p ${prefix} ${genome_bic} ${SG_myr_Soc}
+nucmer -p ${prefix} ${My_REF} ${My_Query}
 
 # 2. Filtering for best hits
 #==========================# 
